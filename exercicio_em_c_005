@@ -1,0 +1,13 @@
+/*Escreva um algoritmo que leia a altura e o raio de uma lata de óleo, calcule o volume “V=pi*R2*ALTURA”.*/
+
+#include <stdio.h>
+#include <math.h> /*biblioteca necessaria para a função 'pow'*/
+main()
+{float alt,raio,vol;
+printf("Digite o valor da altura da lata de oleo:\n");
+scanf("%f",&alt);
+printf("Digite o valor da raio:\n");
+scanf("%f",&raio);
+vol = 3.14*(pow(raio,2))*alt;
+printf("O volume da lata de oleo e %.2f",vol);
+}
