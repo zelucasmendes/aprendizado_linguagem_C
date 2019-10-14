@@ -1,0 +1,18 @@
+/*Escreva um algoritmo que leia as medidas da altura e da base de um triângulo, calcule e informe a sua área.*/
+
+#include <stdio.h>
+main()
+{ float base,alt,area; /*"float" variaveis do tipo real*/
+printf("Digite a altura do triangulo em cm:\n");
+      /*"printf" operação de saída de dados.*/
+scanf("%f",&alt);
+      /*Este comando efetua uma leitura do teclado onde é esperada uma variável float (indicada por “%f”). 
+      O valor lido será armazenado no endereço da variável alt.*/
+printf("Digite o valor da base do triangulo em cm:\n");
+scanf("%f",&base);/*"&variavel" define a que variavel a entrada será atribuída.*/
+  area = (base*alt)/2;
+printf("O triangulo de altura %.2f cm e base %.2f cm tem area de %.2f cm^2",alt,base,area);
+       /*-%f representa o local onde será escrita uma variável float
+         -alt,base,area são as variáveis float que serão mostradas na posição marcada por %f*/
+
+}
