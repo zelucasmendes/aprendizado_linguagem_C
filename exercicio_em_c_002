@@ -1,0 +1,14 @@
+/*Escreva um algoritmo que leia três notas, calcule a média e mostre o resultado com uma mensagem (Média).*/
+
+#include <stdio.h>
+main()
+{ float nota1,nota2,nota3,media;
+    printf("Digite a primeira nota:\n");
+    scanf("%f",&nota1);
+    printf("Digite a segunda nota:\n");
+    scanf("%f",&nota2);
+    printf("Digite a terceira nota:\n");
+    scanf("%f",&nota3);
+  media = (nota1+nota2+nota3)/3;
+    printf("Media: %.2f",media); /*"%.Nf" define o numero de casas decimais apos a virgula*/ 
+}
