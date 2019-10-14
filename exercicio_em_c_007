@@ -1,0 +1,10 @@
+/*Crie um algoritmo que possa entrar com o saldo de uma aplicação e imprimir o novo saldo, considerando o aumento de 12,5%.*/
+
+#include <stdio.h>
+main()
+{float saldo,nsaldo;
+printf("Digite o seu saldo:\n");
+scanf("%f",&saldo);
+nsaldo = saldo * 1.125;
+printf("O novo saldo e: %.2f",nsaldo);
+}
