@@ -1,0 +1,13 @@
+/*Escreva um algoritmo que entre com um número e imprimir a seguinte saída:
+número: , quadrado: , raiz quadrada:*/
+
+#include <stdio.h>
+#include <math.h>
+main()
+{float num,quad,raiz;
+printf("Digite um numero:\n");
+scanf("%f",&num);
+quad=pow(num,2);/*"pow"==potenciação/sintaxe=pow(Numero,Potencia)*/
+raiz=sqrt(num);/*"sqrt"==raiz quadrada/sintaxe=sqrt(Radicando)*/
+printf("Numero: %.2f\nQuadrado: %.2f\nRaiz: %.2f",num,quad,raiz);
+}
