@@ -1,0 +1,45 @@
+/*O cardapio de uma lanchonete é o seguinte:
+COD		Especificacao 		Preco unitario
+100 	Cachorro quente 	3,10
+101 	Bauru simples 		4,30
+102 	Bauru c/ovo 		1,50
+103 	Hamburger 			2,10
+104 	Cheeseburger 		4,40
+105 	Refrigerante 		3,50
+Escrever um algoritmo que leia o codigo do item pedido, a quantidade e calcule o valor a ser pago por aquele
+lanche. Considere que a cada execucao somente sera calculado um item.*/
+
+#include <stdio.h>
+
+main()
+
+{float total,qtd,num;
+
+	printf("Escolha uma opcao do cardapio:\n");
+	printf("100 - Cachorro Quente\n101 - Bauru Simples\n102 - Bauru c/Ovo\n");
+	printf("103 - Hamburguer\n104 - Cheeseburguer\n105 - Refrigerante\n");
+	scanf("%f",&num);
+	printf("Digite a quantidade:\n");
+	scanf("%f",&qtd);
+	
+	if(num==100)
+	{	total = 3.10 * qtd;
+		printf("O valor do pedido e: %.2f",total);}
+	else if (num==101)
+	{	total = 4.30 * qtd;
+		printf("O valor do pedido e: %.2f",total);}   	
+	else if (num==102)
+	{	total = 1.50 * qtd;
+		printf("O valor do pedido e: %.2f",total);}
+	else if (num==103)
+	{	total = 2.10 * qtd;
+		printf("O valor do pedido e: %.2f",total);}
+	else if (num==104)
+	{	total = 4.40 * qtd;
+	   	printf("O valor do pedido e: %.2f",total);}
+	else if (num==105)
+	{	total = 3.50 * qtd;
+	   	printf("O valor do pedido e: %.2f",total);}
+	else 
+		printf("Opcao invalida!");
+	}	
