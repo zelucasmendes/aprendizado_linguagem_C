@@ -1,0 +1,22 @@
+/*Crie um algoritmo que leia a idade de uma pessoa e informar:
+• Se é maior de idade
+• Se é menor de idade
+• Se é maior de 60 anos.
+*/
+
+#include <stdio.h>
+
+main()
+
+{int idade;
+
+	printf("Digite a idade:\n");
+	scanf("%d",&idade);
+	
+	if (idade<18)
+		printf("Menor de idade.");
+	else if (idade<=60)
+		printf("Maior de idade.");
+	else
+		printf("Maior de 60 anos.");
+}
