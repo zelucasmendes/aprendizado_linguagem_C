@@ -1,0 +1,17 @@
+/* Escreva um algoritmo que leia as medidas da altura e da base de um triângulo, 
+calcule e informe a sua área.*/
+
+#include <stdio.h>
+
+main()
+
+{int idade;
+
+	printf("Digite a idade:\n");
+	scanf("%d",&idade);
+	
+	if (idade>=18)
+		printf("Adulta.");
+	else
+		printf("Menor de idade.");
+}
