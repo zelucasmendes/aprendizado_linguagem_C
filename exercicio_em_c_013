@@ -1,0 +1,45 @@
+/*Escreva um programa que receba dois números inteiros e que disponibilize
+as opções abaixo e imprima o resultado da operação:
+A - retornar o soma de dois números;
+S - retornar a subtração de dois números;
+M - retornar a mulbplicação de dois números;
+Q - retornar o quociente da uma divisão entre os dois numeros;
+E - retornar mensagem de erro (opção invalida)*/
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+/*Ficar atento as bibliotecas para utilizar determinadas funcoes no programa*/
+
+main()
+{float num1,num2,total;
+char opc;
+	
+	printf("Digite dois numeros inteiros e diferentes de zero:\n");
+	scanf("%f%f",&num1,&num2);
+	printf("Escolha uma opcao valida:\n");
+	printf("A - Soma dos dois numeros\nS - Subtracao dos dois numeros");
+	printf("\nM - Multipacao dos dois numeros\nQ - Quociente inteiro da divisao\n");
+	scanf("%s",&opc);
+	
+		if(opc=='A' || opc=='a') /*Para string é preciso utilizar '' simples*/
+		{	total = num1 + num2;
+			printf("A soma dos dois numeros e: %.2f",total);
+		}
+		else if (opc=='S' || opc=='s')
+		{	total = num1 - num2;
+			printf("O resultado da substracao e: %.2f",total);
+		}
+		else if (opc=='M' || opc=='m')
+		{	total = num1 * num2;
+			printf("O produto dos dois numeros e: %.2f",total);
+		}
+		else if (opc=='Q' || opc=='q')
+		{	total = num1 / num2;
+			printf("O quociente dos dois numeros e: %.2f",total);
+		}
+		else if (opc=='E' || opc=='e')
+			printf("Opcao Invalida!");
+		else
+			printf("Voce nao escolheu nenhuma das opcoes!");
+}
