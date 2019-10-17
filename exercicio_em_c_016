@@ -1,0 +1,33 @@
+/*Segundo uma tabela médica, o peso ideal está relacionado com a altura e o sexo.
+Fazer um algoritmo que receba a altura e o sexo de uma pessoa, calcular 
+e imprimir o seu peso ideal, utilizando as seguintes fórmulas:
+• Para homens (72,7*H)-58.
+• Para mulheres (62,1*H)-44,7*/
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+main()
+
+{float alt,ideal;
+char sexo;
+
+	printf("Digite a sua altura:\n");
+	scanf("%f",&alt);
+	printf("Escolha o sexo:\nF - feminino\nM - Masculino\n");
+	scanf ("%s",&sexo);
+	
+	if (sexo=='F' || sexo=='f')
+	{
+	ideal=(72.7*alt)-58;
+	printf("O peso ideal e %.2f",ideal);	
+	}
+	else if (sexo=='M' || sexo=='m')
+	{
+	ideal=(62.1*alt)-44.7;
+	printf("O peso ideal e %.2f",ideal);	
+	}
+	else
+	printf("Escolha uma opcao valida para o sexo!");
+}
