@@ -1,0 +1,40 @@
+/*Uma loja fornece 5% de desconto para funcionários (F) e 10% de desconto para
+clientes especiais (E). Crie um algoritmo que calcule o valor total a ser pago por uma
+pessoa. O algoritmo deverá ler o valor total da compra efetuada e um código que
+identifique se o comprador é um cliente comum ( C ) ou dos dois tipos de cliente que
+recebem descontos.*/
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+main()
+
+{float valor,vt;
+char cod;
+	
+	printf("Digite o valor da compra:\n");
+	scanf("%f",&valor);
+	printf("Digite:\nC - cliente comun\nE - cliente especial\nF - Funcionario\n");
+	scanf("%s",&cod);
+	
+	if(cod=='C' || cod=='c')
+	{
+	vt = valor;
+	printf("O valor da sua compra e de %.2f",vt);	
+	}	
+	else
+	if(cod=='E' || cod=='e')
+	{
+	vt = valor * 0.90;
+	printf("O valor da sua compra e de %.2f",vt);
+	}
+	else
+	if (cod=='F' || cod=='f')
+	{
+	vt = valor * 0.95;
+	printf("O valor da sua compra e de %.2f",vt);	
+	}
+	else
+	printf("Digite um codigo valido.");					
+}
