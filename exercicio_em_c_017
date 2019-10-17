@@ -1,0 +1,24 @@
+/*Entrar com o nome, sexo e a idade de uma pessoa. Se a pessoa for do sexo 
+feminino e tiver menos que 25 anos, imprimir o nome e a mensagem: ACEITA. Caso 
+contrário, imprimir nome e a mensagem: NÃO ACEITA.(Considerar F ou f).*/
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+main()
+{char nome[60],sexo;
+int idade;
+
+	printf("Digite o seu nome:\n");
+	gets (nome);
+	printf("Sexo:\nM - Masculino\nF - Feminino\n");
+	scanf("%s",&sexo);
+	printf("Digite a sua idade:\n");
+	scanf("%d",&idade);
+	
+	if (sexo=='F' || sexo=='f' && idade<25)
+		printf("%s: Aceita.",nome);
+	else
+		printf("%s: Nao aceita.",nome);
+}
