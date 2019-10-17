@@ -1,0 +1,24 @@
+/*Faça um algoritmo que leia dois valores inteiros A e B se os valores forem 
+iguais deverá se somar os dois, caso contrário multiplique A por B ao final 
+do calculo atribuir o valor para uma variável C e mostrar*/
+
+#include <stdio.h>
+
+main()
+
+{float a,b,c;
+
+	printf("Digite 2 numeros:\n");
+	scanf("%f%f",&a,&b);
+	
+	if(a==b)
+	{ 
+	c=a+b;
+	printf("%.2f",c);	
+	} 
+	else
+	{
+	c=a*b;
+	printf("%.2f",c);
+	}	
+}
