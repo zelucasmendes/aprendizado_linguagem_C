@@ -1,0 +1,23 @@
+/*O índice de massa corporal (IMC) de uma pessoa é dada pelo seu peso
+dividido pelo quadrado da sua altura. Se o IMC é superior a 30, a pessoa é
+considerada obesa. Dados o peso (Kg) e altura em (M) de uma pessoa, informe
+seu IMC e indique se ela precisa de regime ou não.*/
+
+#include <stdio.h>
+#include <math.h>
+
+main()
+{float alt,peso,imc;
+
+	printf("Digite a sua altura em M:\n");
+	scanf("%f",&alt);
+	printf("Digite o seu peso em KG:\n");
+	scanf("%f",&peso);
+	
+	imc = peso / pow(alt,2);
+	
+	if(imc>30)
+		printf("%.2f. Obesidade.",imc);
+	else
+		printf("%.2f. Peso normal.",imc);
+}
