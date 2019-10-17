@@ -1,0 +1,29 @@
+/*Escrever um algoritmo que: leia dois valores (A e B);
+• Verificar se o valor de A é maior que o valor de B;
+• b.1) Se for verdadeiro, efetuar a troca de
+valores entre as variáveis;
+• b.2) Se for falso, pedir para executar o que está
+estabelecido no passo c
+• c) Apresentar os valores das duas variáveis*/
+
+#include <stdio.h>
+
+main()
+
+{float a,b,c;
+
+	printf("Digite 2 valores:\n");
+	scanf("%f%f",&a,&b);
+	
+	if(a>b)
+	{
+	a=c;
+	b=a;
+	c=b;
+	printf("%.2f, %.2f",a,b);}
+	else
+	{
+	a=a;
+	b=b;
+	printf("%.2f, %.2f",a,b);}		
+}
