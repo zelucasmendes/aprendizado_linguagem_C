@@ -1,0 +1,24 @@
+/*Faça um algoritmo que leia os valores A, B, C e diga se a soma de A + B 
+é menor que C.*/
+
+#include <stdio.h>
+
+main()
+
+{float a,b,c,soma;
+
+	printf("Digite 3 numeros:\n");
+	printf("A = ");
+	scanf("%f",&a);
+	printf("B = ");
+	scanf("%f",&b);
+	printf("C = ");
+	scanf("%f",&c);
+	
+		soma=a+b;
+	
+	if (soma<c)
+		printf("Soma de A + B e menor que C.");
+	else
+		printf("Soma de A + B NAO e menor que C.");   	
+}
