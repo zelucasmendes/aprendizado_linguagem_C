@@ -1,5 +1,8 @@
 /*Escreva um algoritmo que leia as medidas da altura e da base de um triângulo, calcule e informe a sua área.*/
 
+
+
+
 #include <stdio.h>
 main()
 { float base,alt,area; /*"float" variaveis do tipo real*/
